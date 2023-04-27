@@ -82,7 +82,7 @@ button:hover {
 .calc-display {
     display: flex;
     justify-content: end;
-    align-items: center;
+    align-items: end;
     height: 2.3em;
     width: 100%;
     padding: 0.5em;

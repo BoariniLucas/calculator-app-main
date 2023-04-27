@@ -25,29 +25,44 @@
         </div>
       </div>
 
-      <div class="calc-display">
-        399,981
-      </div>
+      <div id="calc-display" class="calc-display"></div>
 
       <div class="number">
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button class="btn-del">del</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>+</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>-</button>
-        <button>.</button>
-        <button>0</button>
-        <button>/</button>
-        <button class="btn-x">x</button>
-        <button class="btn-large btn-reset">reset</button>
-        <button class="btn-large btn-equal">=</button>
+        <button id="btn-7" onclick="printNumber(this.value)" value="7">7</button>
+
+        <button id="btn-8" onclick="printNumber(this.value)" value="8">8</button>
+
+        <button id="btn-9" onclick="printNumber(this.value)" value="9">9</button>
+
+        <button id="btn-del" class="btn-del" onclick="cleanDisplay()">del</button>
+
+        <button id="btn-4" onclick="printNumber(this.value)" value="4">4</button>
+
+        <button id="btn-5" onclick="printNumber(this.value)" value="5">5</button>
+
+        <button id="btn-6" onclick="printNumber(this.value)" value="6">6</button>
+
+        <button id="btn-plus" onclick="selectedOperator(this.value)" value="+">+</button>
+
+        <button id="btn-1" onclick="printNumber(this.value)" value="1">1</button>
+
+        <button id="btn-2" onclick="printNumber(this.value)" value="2">2</button>
+
+        <button id="btn-3" onclick="printNumber(this.value)" value="3">3</button>
+
+        <button id="btn-minus" onclick="selectedOperator(this.value)" value="-">-</button>
+
+        <button id="btn-dot" class="btn-dot" onclick="printDot(this.value)" value=".">.</button>
+
+        <button id="btn-0" onclick="printNumber(this.value)" value="0">0</button>
+
+        <button id="btn-divider" onclick="selectedOperator(this.value)" value="/">/</button>
+
+        <button id="btn-multiply" onclick="selectedOperator(this.value)" value="*">x</button>
+
+        <button id="btn-reset" class="btn-large btn-reset" onclick="resetAll()">reset</button>
+
+        <button id="btn-equal" class="btn-large btn-equal">=</button>
       </div>
     </section>
 
@@ -60,5 +75,6 @@
       <a href="https://github.com/BoariniLucas" target="_blank">Coded by Lucas Boarini</a>
     </div>
     -->
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
