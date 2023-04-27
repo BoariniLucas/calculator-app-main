@@ -1,0 +1,149 @@
+:root {
+    --principalFont: 'League Spartan', sans-serif;
+    --whiteColor: #ffffff;
+    --bgBodyColor: #3b4664;
+    --bgDisplay: #181f32;
+    --bgButtonPlace: #252d44;
+    --bgBtn: #eae3db;
+    --bgBtnResetDel: #647299;
+    --bgBtnEqual: #d13f30;
+    --fontNumberColor: #444a59;
+    --btnShadow: #b2a295;
+    --bgBtnResetDelShadow: #424e75;
+    --bgBtnEqualShadow: #8f2316;
+    --btnHover: #ffffff;
+    --bgBtnResetDelHover: #a2b3e1;
+    --bgBtnEqualHover: #f96c5b;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--principalFont);
+    font-size: 32px;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--bgBodyColor);
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.8em;
+    width: 2.8em;
+    font-family: var(--principalFont);
+    font-size: 25px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 0.2em 0.3em;
+    box-shadow: 0px 3px 0px 0px var(--btnShadow);
+    background-color: var(--bgBtn);
+    color: var(--fontNumberColor);
+}
+
+button:hover {
+    background-color: var(--btnHover);
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 16em;
+    width: 11.5em;
+}
+.container div {
+    margin: 0.2em 0em;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    height: 2em;
+    width: 100%;
+    color: var(--whiteColor);
+}
+
+.switch-theme {
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.calc-display {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 2.3em;
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: var(--whiteColor);
+    background-color: var(--bgDisplay);
+}
+
+.number {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 11em;
+    width: 100%;
+    padding: 0.4em 0.2em;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: var(--bgButtonPlace);
+}
+
+.btn-large {
+    width: 6.3em;
+}
+
+.btn-del {
+    font-size: 20px;
+    padding: 1.1em 1.78em;
+    box-shadow: 0px 3px 0px 0px var(--bgBtnResetDelShadow);
+    color: var(--whiteColor);
+    background-color: var(--bgBtnResetDel);
+}
+
+.btn-del:hover {
+    background-color: var(--bgBtnResetDelHover);
+}
+
+.btn-x {
+    font-size: 20px;
+    padding: 1.1em 1.78em;
+}
+
+.btn-reset {
+    font-size: 20px;
+    padding: 1.15em 4em;
+    box-shadow: 0px 3px 0px 0px var(--bgBtnResetDelShadow);
+    color: var(--whiteColor);
+    background-color: var(--bgBtnResetDel);
+}
+
+.btn-reset:hover {
+    background-color: var(--bgBtnResetDelHover);
+}
+
+.btn-equal {
+    box-shadow: 0px 3px 0px 0px var(--bgBtnEqualShadow);
+    color: var(--whiteColor);
+    background-color: var(--bgBtnEqual);
+}
+
+.btn-equal:hover {
+    background-color: var(--bgBtnEqualHover);
+}
