@@ -5,6 +5,8 @@ const btnMinus = document.querySelector('#btn-minus');
 const btnDivider = document.querySelector('#btn-divider');
 const btnMultiply = document.querySelector('#btn-multiply');
 
+const btnDot = document.querySelector('#btn-dot');
+
 /*   ---Button Functions---   */
 const btnEqual = document.querySelector('#btn-equal');
 
@@ -16,6 +18,7 @@ let num1 = 0;
 let num2 = 0;
 let operator = '';
 let result = 0;
+btnEqual.disabled = true;
 
 
 
@@ -67,6 +70,8 @@ btnEqual.addEventListener('click', () => {
     }
     
     calcDisplay.innerHTML = result;
+    btnDot.disabled = false;
+    btnEqual.disabled = true;
 });
 
 
@@ -84,6 +89,7 @@ function printNumber(x) {
 
 function printDot(x) {
 
+    btnDot.disabled = true;
     calcDisplay.innerHTML += x;
 }
 
@@ -102,6 +108,8 @@ function resetAll() {
     operator = '';
     result = 0;
     calcDisplay.innerHTML = "";
+    btnDot.disabled = false;
+    btnEqual.disabled = true;
 }
 
 function takeNumber() {
@@ -109,10 +117,14 @@ function takeNumber() {
         num1 = parseFloat(calcDisplay.innerHTML);
 
         cleanDisplay();
+        btnDot.disabled = false;
+        btnEqual.disabled = false;
 
     } else {
         num2 = parseFloat(calcDisplay.innerHTML);
         cleanDisplay();
+        btnDot.disabled = false;
+        btnEqual.disabled = false;
     }
 }
 

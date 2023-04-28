@@ -23,7 +23,7 @@ Desenvolvi esse projeto realizando as seguintes etapas:
 
 - [X] Montar estrutura básica da calculadora;
 - [X] Estilizar design da calculadora;
-- [ ] Criar funções para as operações matemáticas;
+- [X] Criar funções para as operações matemáticas;
 - [ ] Desenvolver botão para troca de tema;
 - [ ] Criar função para troca de tema;
 
