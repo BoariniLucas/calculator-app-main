@@ -27,22 +27,30 @@ btnEqual.disabled = true;
 
 btnPlus.addEventListener('click', () => {
     
-    takeNumber();
+    if(calcDisplay.innerHTML != ''){
+        takeNumber();
+    }    
 });
 
 btnMinus.addEventListener('click', () => {
 
-    takeNumber();
+    if(calcDisplay.innerHTML != ''){
+        takeNumber();
+    }  
 });
 
 btnDivider.addEventListener('click', () => {
 
-    takeNumber();
+    if(calcDisplay.innerHTML != ''){
+        takeNumber();
+    }  
 });
 
 btnMultiply.addEventListener('click', () => {
 
-    takeNumber();
+    if(calcDisplay.innerHTML != ''){
+        takeNumber();
+    }  
 });
 
 btnEqual.addEventListener('click', () => {

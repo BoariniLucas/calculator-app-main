@@ -1,0 +1,26 @@
+@media screen and (max-width: 375px) {
+
+    .container {
+        width: 10em;
+    }
+
+    button {
+        height: 2em;
+        width: 2.3em;
+    }
+
+    .btn-large {
+        height: 2.5em;
+        width: 5.3em;
+    }
+
+    .btn-del {
+        padding: 1.25em 1.45em;
+        margin-right: 0.4em;
+    }
+
+    .btn-reset {
+        padding: 1.6em 3.4em;
+    }
+
+}

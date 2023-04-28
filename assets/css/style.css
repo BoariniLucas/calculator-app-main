@@ -25,6 +25,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     font-family: var(--principalFont);
     font-size: 32px;
     height: 100vh;
@@ -180,11 +181,6 @@ button:hover {
     background-color: var(--bgBtnResetDelHover);
 }
 
-.btn-x {
-    font-size: 20px;
-    padding: 1.1em 1.78em;
-}
-
 .btn-reset {
     font-size: 20px;
     padding: 1.15em 4em;
@@ -205,4 +201,19 @@ button:hover {
 
 .btn-equal:hover {
     background-color: var(--bgBtnEqualHover);
+}
+
+.attribution {
+    margin-top: 1em;
+}
+
+.attribution a {
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--principalFontColor);
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
