@@ -14,6 +14,8 @@
     --btnHover: #ffffff;
     --bgBtnResetDelHover: #a2b3e1;
     --bgBtnEqualHover: #f96c5b;
+    --switchButtonBg1: #252d44;
+    --switchButton1: #d53d32;
 }
 
 body {
@@ -66,18 +68,67 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     height: 2em;
     width: 100%;
     color: var(--whiteColor);
 }
 
-.switch-theme {
-    font-size: 10px;
+.switch-theme-container {
+    display: flex;
+    flex-direction: column;
+    height: 5em;
+    width: 11em;
+    font-size: 8px;
     letter-spacing: 1px;
     text-transform: uppercase;
+
 }
+
+.switch-theme-container label {
+    align-self: flex-end;
+    font-size: 9px;
+    letter-spacing: 8px;
+}
+
+.switch-theme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.switch-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    height: 2em;
+    width: 5.5em;
+    background: var(--switchButtonBg1);
+    cursor: pointer;
+ }
+
+ .switch-toggle label {
+    position: relative;
+    align-self: center;
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 15px;
+ }
+ 
+ .switch-toggle input {
+    position: absolute;
+    margin: 1px;
+    opacity: 0;
+    z-index: -1000;
+    cursor: pointer;
+ }
+
+ .switch-toggle input:checked + label {
+    background: var(--switchButton1);
+ }
 
 .calc-display {
     display: flex;
