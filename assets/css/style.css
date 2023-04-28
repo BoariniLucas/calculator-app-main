@@ -1,6 +1,6 @@
 :root {
     --principalFont: 'League Spartan', sans-serif;
-    --whiteColor: #ffffff;
+    --principalFontColor: #ffffff;
     --bgBodyColor: #3b4664;
     --bgDisplay: #181f32;
     --bgButtonPlace: #252d44;
@@ -11,11 +11,14 @@
     --btnShadow: #b2a295;
     --bgBtnResetDelShadow: #424e75;
     --bgBtnEqualShadow: #8f2316;
+    --switchButtonBg: #252d44;
+    --switchButton: #d53d32;
     --btnHover: #ffffff;
     --bgBtnResetDelHover: #a2b3e1;
     --bgBtnEqualHover: #f96c5b;
-    --switchButtonBg1: #252d44;
-    --switchButton1: #d53d32;
+    --switchButtonHover: #f76c5f;
+    --fontBtnEqualColor: #ffffff;
+    --fontBtnResetDelColor: #ffffff;
 }
 
 body {
@@ -72,7 +75,7 @@ button:hover {
     font-weight: bold;
     height: 2em;
     width: 100%;
-    color: var(--whiteColor);
+    color: var(--principalFontColor);
 }
 
 .switch-theme-container {
@@ -106,7 +109,7 @@ button:hover {
     border-radius: 15px;
     height: 2em;
     width: 5.5em;
-    background: var(--switchButtonBg1);
+    background: var(--switchButtonBg);
     cursor: pointer;
  }
 
@@ -127,7 +130,12 @@ button:hover {
  }
 
  .switch-toggle input:checked + label {
-    background: var(--switchButton1);
+    background: var(--switchButton);
+ }
+
+ .switch-toggle input:checked + label:hover {
+    background: var(--switchButtonHover);
+    cursor: pointer;
  }
 
 .calc-display {
@@ -139,7 +147,7 @@ button:hover {
     padding: 0.5em;
     border-radius: 5px;
     box-sizing: border-box;
-    color: var(--whiteColor);
+    color: var(--principalFontColor);
     background-color: var(--bgDisplay);
 }
 
@@ -164,7 +172,7 @@ button:hover {
     font-size: 20px;
     padding: 1.1em 1.78em;
     box-shadow: 0px 3px 0px 0px var(--bgBtnResetDelShadow);
-    color: var(--whiteColor);
+    color: var(--fontBtnResetDelColor);
     background-color: var(--bgBtnResetDel);
 }
 
@@ -181,7 +189,7 @@ button:hover {
     font-size: 20px;
     padding: 1.15em 4em;
     box-shadow: 0px 3px 0px 0px var(--bgBtnResetDelShadow);
-    color: var(--whiteColor);
+    color: var(--fontBtnResetDelColor);
     background-color: var(--bgBtnResetDel);
 }
 
@@ -191,7 +199,7 @@ button:hover {
 
 .btn-equal {
     box-shadow: 0px 3px 0px 0px var(--bgBtnEqualShadow);
-    color: var(--whiteColor);
+    color: var(--fontBtnEqualColor);
     background-color: var(--bgBtnEqual);
 }
 
