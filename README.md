@@ -6,27 +6,23 @@ Nesse projeto irei desenvolver uma calculadora, meu objetivo com esse projeto é
 
 ## Menu
 
-- [O que aprendi](#o-que-aprendi)
 - [Meu Processo](#meu-peocesso)
 - [Screenshot](#screenshot)
 - [Link](#link)
 - [Construido com](#construido-com)
 - [Contatos](#contatos)
 
-### O que aprendi
-
-
 
 ### Meu Processo
 
-Desenvolvi esse projeto realizando as seguintes etapas:
+Com o desenvolvimento desse projeto consegui aprender mais sobre como manipular dados com o JavaScript, e aprimorar também minhas habilidades com o Flexbox no CSS. Eesse projeto realizando as seguintes etapas:
 
 - [X] Montar estrutura básica da calculadora;
 - [X] Estilizar design da calculadora;
 - [X] Criar funções para as operações matemáticas;
 - [X] Desenvolver botão para troca de tema;
 - [X] Criar função para troca de tema;
-- [ ] Implementar responsividade;
+- [X] Implementar responsividade;
 
 ### Screenshot
 
@@ -36,7 +32,9 @@ Abaixo estou deixando um screenshot do design final do projeto conforme desenvol
 
 ### Link
 
+Estou deixando abaixo o link com o deploy do projeto para visualização direto no navegador:
 
+- Para acessar o App clique [aqui]()
 
 ### Construido com
 
