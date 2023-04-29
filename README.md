@@ -34,7 +34,7 @@ Abaixo estou deixando um screenshot do design final do projeto conforme desenvol
 
 Estou deixando abaixo o link com o deploy do projeto para visualização direto no navegador:
 
-- Para acessar o App clique [aqui]()
+- Para acessar o App clique [aqui](https://calculator-app-main-lake.vercel.app/)
 
 ### Construido com
 
